@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+        {% je_document_head %}
+    </head>
+    <body>
+	 {% include header.html %}
+    
+	 <div id="document-content">
+	   <h1 class="doc-title">{{ page.title }}</h1> 
+	   {% je_document_toolbar %}
+	 	
+      <div class="document-viewport">
+         {{ content }}
+      </div>
+
+	 </div>
+
+	 {% include footer.html %}
+    </body>
+</html>

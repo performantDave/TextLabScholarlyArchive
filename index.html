@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class='edition-cover'>
+	<img alt="Edition cover" class="img-responsive" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/edition-cover.jpg">
+</div>
+
+<div class="edition-description">{% edition description %}</div>
+
+<div class="document-list">
+<ul>
+	{% for document in site.data.documents %}
+	<li><span class='document-title'><a href="{{ document.url }}">{{ document.title }}</a></span>: <span class='document-description'>{{ document.description }}</span></li>
+	{% endfor %}	
+</ul>
+</div>
