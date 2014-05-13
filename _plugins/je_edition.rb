@@ -1,3 +1,4 @@
+# This is a mock plugin for the "edition" tag
 
 module Jekyll
   
