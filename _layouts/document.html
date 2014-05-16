@@ -20,26 +20,12 @@
 	 {% include header.html %}
     
 	 <div id="document-content">
-	   <h1 class="doc-title">{{ page.title }}</h1> 
-	   <div class="toolbar">
-	   <div class="btn-group">
-	     <button type="button" class="btn active diplomatic-view-button">Diplomatic View</button>
-	     <button type="button" class="btn reading-view-button">Inline View</button>
-	  </div>
-
-	  <div class="btn-group right $HIDDEN">
-	     <label class="compare-label">Compare with</label>
-	     <select id="comparands" onchange="location = this.options[this.selectedIndex].value;">
-	        <option value="" disabled selected>Select document</option>
-	        <!-- $COMPARANDS -->
-	     </select>
-	  </div>
-	</div>
+	 	<h1 class="doc-title">{{ page.title }}</h1> 
+	 	{% je_document_toolbar %}
 	 	
-      <div class="document-viewport">
-         {{ content }}
-      </div>
-
+		<div class="document-viewport">
+		   {{ content }}
+		</div>
 	 </div>
 
 	 {% include footer.html %}

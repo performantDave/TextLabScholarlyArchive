@@ -23,25 +23,4 @@ $(function() {
          });
       });
 
-      var toggleViewButtons = function(clicked) {
-         if (clicked == "diplomatic") {
-            $(".reading-view-button").removeClass("active");
-            $(".diplomatic-view-button").addClass("active");
-         } else {
-            $(".diplomatic-view-button").removeClass("active");
-            $(".reading-view-button").addClass("active");
-         }
-      };
-
-      $(".diplomatic-view-button").on("click", function() {
-         toggleViewButtons("diplomatic");
-         $(".diplomatic").removeClass("hidden");
-         $(".reading").addClass("hidden");
-      });
-
-      $(".reading-view-button").on("click", function() {
-         toggleViewButtons("reading");
-         $(".diplomatic").addClass("hidden");
-         $(".reading").removeClass("hidden");
-      });
-   });
+});

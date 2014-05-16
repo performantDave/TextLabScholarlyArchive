@@ -216,7 +216,8 @@ body {
 }
 
 .toolbar {
-   padding: 10px 10px;
+   height: 30px;
+   padding-right: 10px;
    background-color: #efefef;
 }
 

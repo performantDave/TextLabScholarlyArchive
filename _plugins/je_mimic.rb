@@ -29,6 +29,19 @@ module Jekyll
         return "<span class='error' invalid parameter: #{@edition_data_key}</span>"
       end 
    end 
+   
+   
+   class DocumentToolbar < Liquid::Tag
+          
+      def initialize(tag_name, param, tokens)
+         super
+      end 
+    
+      def render(context)        
+        return "<div class='toolbar'></div>"
+      end 
+   end
 end
 
 Liquid::Template.register_tag('edition', Jekyll::Edition)
+Liquid::Template.register_tag('je_document_toolbar', Jekyll::DocumentToolbar)
