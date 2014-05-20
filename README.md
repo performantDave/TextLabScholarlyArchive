@@ -3,6 +3,11 @@ Scholarly Archive Template
 
 This site template displays all of the documents in an edition and allows readers to compare different versions of the documents.
 
+This template is written for the Jekyll framework. You can learn more about using Jekyll at: <a href="http://jekyllrb.com/" target="_blank">jekyllrb.com</a>.
+
+To begin building your own custom template, we recommend that you fork this project on Github. This will give you a starting point you can then modify.
+
+
 Juxta Editions Specific Tags
 ------------------------
 
