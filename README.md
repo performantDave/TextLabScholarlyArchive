@@ -9,7 +9,7 @@ Juxta Editions Specific Tags
 Presently, there is only one tag introduced by Juxta Editions:
 
 
-\{% edition <key> %\} - Adds data from your edition into your website. Current values for key are "title" and "description".
+\{% edition \<key\> %\} - Adds data from your edition into your website. Current values for key are "title" and "description".
 
 
 Differences from Jekyll
