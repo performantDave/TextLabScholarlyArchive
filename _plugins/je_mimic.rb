@@ -27,6 +27,7 @@ module Jekyll
       def render(context)        
         return "EDITION DESCRIPTION" if @edition_data_key == "description"
         return "EDITION TITLE" if @edition_data_key == 'title'
+        return "EDITION IMAGE" if @edition_data_key == 'image'
         return "<span class='error' invalid parameter: #{@edition_data_key}</span>"
       end 
    end 
