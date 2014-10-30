@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>{{ page.title }}</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+   <head>
+      <title>{{ page.title }}</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="https://s3.amazonaws.com/assets-juxtaeditions/assets/hum_edit_viewer.css">
-        <link rel="stylesheet" href="../css/common.css">
-        <link rel="stylesheet" href="../css/comparison.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="https://s3.amazonaws.com/assets-juxtaeditions/assets/hum_edit_viewer.css">
+      <link rel="stylesheet" href="../css/common.css">
+      <link rel="stylesheet" href="../css/comparison.css">
 
-		<!-- JUXTA WS visualization stylesheet -->
-		<link href="https://s3.amazonaws.com/assets-juxtaeditions/assets/sidebyside.css" rel="stylesheet" type="text/css">
+      <!-- JUXTA WS visualization stylesheet -->
+      <link href="https://s3.amazonaws.com/assets-juxtaeditions/assets/sidebyside.css" rel="stylesheet" type="text/css">
 
-		<!-- JUXTA WS dependencies -->
-		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script type="text/javascript" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/raphael-min.js"></script>
-		<script type="text/javascript" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/jquery.mousewheel.min.js"></script> 
+      <!-- JUXTA WS dependencies -->
+      <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/raphael-min.js"></script>
+      <script type="text/javascript" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/jquery.mousewheel.min.js"></script>
 
-		<!-- JUXTA WS scripts -->
-		<script type="text/javascript" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/juxta-ws-common.js"></script>
-		<script type="text/javascript" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/sidebyside.js"></script> 
-		<script src="../js/comparison.js"></script>
+      <!-- JUXTA WS scripts -->
+      <script type="text/javascript" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/juxta-ws-common.js"></script>
+      <script type="text/javascript" src="https://s3.amazonaws.com/assets-juxtaeditions/assets/sidebyside.js"></script>
+      <script src="../js/comparison.js"></script>
 
-    </head>
-    <body>
-	 {% include header.html %}	
+   </head>
+   <body>
+      {% include header.html %}
 
-    <div id="main-content">      
-      <div class="comparison-view">
-         {{ content }}
+      <div id="main-content">
+         <div class="comparison-view">
+            {{ content }}
+         </div>
       </div>
-    </div>
 
-	 {% include footer.html %}	
-    </body>
+      {% include footer.html %}
+   </body>
 </html>
