@@ -33,6 +33,10 @@
 	min-height: 300px;
 }
 
+#published-header {
+   cursor: pointer;
+}
+
 #published-header .header-title {
    font-size: 1.2em;
    margin: 20px 0 10px 0px;
