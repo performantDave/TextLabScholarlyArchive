@@ -19,13 +19,32 @@ module Jekyll
    class JeDocument < Liquid::Tag
           
       def initialize(tag_name, param, tokens)
+         # There are 2 forms of the document tag; one that uses
+         # an enclsong context to determine document, the other
+         # uses shortcodes.
+         # Shortcodes look like this: document[tag] header.stuff
+         # Context looks like this:   document header.stuff
+         # Anything immediately after 'document' is part if the params string
+         #
+         # Determine type and parse info:
+         @type = :context
+         @type = :shortcode if param[0] == '[' 
          @jpath = param.strip
-         @jpath.gsub!(/header./, '')
+         @shortcode = nil 
+
+         if @type == :shortcode
+            @shortcode = @jpath.split(" ")[0]
+            @shortcode.gsub!(/[\[\]]/, '') 
+            @jpath = @jpath.split(" ")[1]
+         end 
+         
+         @jpath.gsub!(/header./, '') 
          super
       end 
     
       # return placeholders
       def render(context)        
+        return "DOCUMENT #{@shortcode} HEADER #{@jpath}" if @type == :shortcode
         return "HEADER #{@jpath}"
       end 
    end 
