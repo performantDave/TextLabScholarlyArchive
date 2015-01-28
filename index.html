@@ -6,15 +6,17 @@ layout: default
 	<img alt="Edition cover" class="img-cover" src="{% edition image %}">
 </div>
 
-<div class="edition-description">{% edition description %}</div>
+<div class='main-content'>
+	<div class="edition-description">{% edition description %}</div>
 
-<div class="document-list">
-<ul>
-	{% for document in site.data.documents %}
-	<li>
-	   <span class='document-title'><a href="{{ document.url }}">{{ document.title }}</a></span>: 
-		<span class='document-description'>{% document header.sdFreeForm[0].text %}</span>
-	</li>
-	{% endfor %}	
-</ul>
+	<div class="document-list">
+	<ul>
+		{% for document in site.data.documents %}
+		<li>
+		   <span class='document-title'><a href="{{ document.url }}">{{ document.title }}</a></span>: 
+		   <span class='document-description'>{% document header.sdFreeForm[0].text %}</span>
+		</li>
+		{% endfor %}	
+	</ul>
+	</div>
 </div>

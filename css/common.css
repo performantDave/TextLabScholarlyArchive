@@ -41,6 +41,10 @@
    max-width: 500px;
 }
 
+.main-content {
+	max-width: 500px;
+}
+
 #published-header {
    cursor: pointer;
 }
