@@ -32,9 +32,13 @@
 	background: #eaeaea;	
 }
 
+.edition-cover {
+	float: right;
+	max-width: 500px;
+}
+
 .edition-cover img {
-   min-width: 300px;
-	min-height: 300px;
+   max-width: 500px;
 }
 
 #published-header {
@@ -73,4 +77,3 @@
   color: #888;
   width: 210px;
 }
-
