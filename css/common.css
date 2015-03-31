@@ -89,7 +89,7 @@ body {
 
 #headernav {
   background-color: #000000;
-  color: #ffffff;
+  color: #ffffff !important;
   padding: 5px;
   font-size: 12px;
   font-weight: bold;
