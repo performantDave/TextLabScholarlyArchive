@@ -95,3 +95,10 @@ body {
   font-weight: bold;
 }
 
+.reading-page, .reading-text {
+   background-color: #FDEECB !important;
+   -webkit-box-shadow: none !important;
+   -moz-box-shadow: none !important;
+   box-shadow: none !important;
+}
+
