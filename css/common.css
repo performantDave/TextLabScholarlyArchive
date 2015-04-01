@@ -89,10 +89,16 @@ body {
 
 #headernav {
   background-color: #000000;
-  color: #ffffff !important;
+  color: #ffffff;
   padding: 5px;
   font-size: 12px;
   font-weight: bold;
+  width: 1024px;
+  margin: auto;
+}
+
+#headernav a {
+  color: #ffffff;
 }
 
 .reading-page, .reading-text {
