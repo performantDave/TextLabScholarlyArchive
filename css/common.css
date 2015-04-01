@@ -115,12 +115,6 @@ body {
    background-color: #FDEECB !important;
 }
 
-#reading-text {
-   width: 1024px;
-   margin: auto;
-   background-color: #F0E1C0;
-}
-
-.doc-title h1 {
+h1 .doc-title {
    padding-left: 15px;
 }
