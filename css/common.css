@@ -116,5 +116,11 @@ body {
 }
 
 #reading-text {
-   padding-left: 250px;
+   width: 1024px;
+   margin: auto;
+   background-color: #F0E1C0;
+}
+
+.doc-title h1 {
+   padding-left: 15px;
 }
