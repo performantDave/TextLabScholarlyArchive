@@ -108,3 +108,10 @@ body {
    box-shadow: none !important;
 }
 
+#document-viewport {
+   background-color: #FDEECB !important;
+}
+
+#document-viewport .toolbar {
+   background-color: #FDEECB !important;
+}
