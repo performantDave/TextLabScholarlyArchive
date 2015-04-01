@@ -110,6 +110,11 @@ body {
 
 #accordion,
 #document-viewport,
+#document-viewport .tei-header-editor,
 #hum-edit-published .toolbar {
    background-color: #FDEECB !important;
+}
+
+#reading-text {
+   padding-left: 250px;
 }
