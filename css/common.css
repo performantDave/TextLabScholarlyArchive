@@ -110,6 +110,7 @@ body {
 
 #accordion,
 #document-viewport,
+#document-viewport .table-of-contents,
 #document-viewport .tei-header-editor,
 #hum-edit-published .toolbar {
    background-color: #FDEECB !important;
